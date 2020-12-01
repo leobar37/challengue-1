@@ -1,0 +1,16 @@
+@import "variables";
+@import "general";
+
+@import "components/main.scss";
+@import "../../node_modules/normalize.css/normalize.css";
+
+body {
+  font-family: $font-roboto;
+  font-size: 18px;
+}
+/*=============================================
+=            pages            =
+=============================================*/
+.index {
+  @import "pages/index";
+}

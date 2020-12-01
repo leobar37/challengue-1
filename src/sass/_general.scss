@@ -1,0 +1,26 @@
+.btn {
+  border: none;
+  outline: none;
+  padding: 15px 25px;
+  display: inline-block;
+  &:hover {
+    transform: scale(1.08);
+  }
+}
+a {
+  text-decoration: none;
+}
+.layout {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  section {
+    width: 50%;
+    height: 100vh;
+  }
+}
+
+.title {
+  font-weight: 700;
+  font-family: $font-title;
+}

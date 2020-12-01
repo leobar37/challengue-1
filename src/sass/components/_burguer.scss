@@ -1,0 +1,26 @@
+$width-burguer: 25px;
+$height-burguer: 3px;
+$color-burguer: black;
+%sticks {
+  position: absolute;
+  height: $height-burguer;
+  background-color: $color-burguer;
+  right: 0;
+  width: $width-burguer - 10px;
+  content: "";
+}
+
+.burguer {
+  width: $width-burguer;
+  background-color: $color-burguer;
+  height: $height-burguer;
+  position: relative;
+  &::after {
+    @extend %sticks;
+    top: 10px;
+  }
+  &::before {
+    @extend %sticks;
+    bottom: 10px;
+  }
+}
